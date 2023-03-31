@@ -103,6 +103,7 @@ void stergere(int v[], int&d, int p) {
 	}
 	d--;
 }
+
 void inserare(int v[], int& d, int p,int nou) {
 
 	for (int i = d-1; i>=p; i--) {
@@ -111,6 +112,11 @@ void inserare(int v[], int& d, int p,int nou) {
 	d++;
 	v[p] = nou;
 }
+//frecventa cifre
 
+void frecventaCifre(int f[], int numar) {
+
+	while(numar)
+}
 
 					
