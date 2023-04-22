@@ -116,7 +116,33 @@ void inserare(int v[], int& d, int p,int nou) {
 
 void frecventaCifre(int f[], int numar) {
 
-	while(numar)
+	while (numar != 0) {
+
+		f[numar % 10]++;
+
+		numar = numar / 10;
+	}
 }
 
-					
+void secventa(int x[], int n) {
+
+	int smax = 1;
+	int dmax = 0;
+	for (int i = 0; i < n; i++) {
+		
+		if (x[i] % 2 == 1) {
+			int j = i;
+			while (j + 1 < n && x[j + 1] % 2 == 1) {
+				j++;
+			}
+			if (j - i + 1 > dmax - smax + 1) {
+				smax = i, dmax = j;
+			}
+			i = j;
+		}
+	}
+	cout << endl;
+	cout << smax << endl;
+	cout << dmax << endl;
+
+}

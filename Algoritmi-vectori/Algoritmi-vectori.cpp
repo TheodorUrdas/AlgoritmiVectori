@@ -4,10 +4,12 @@
 
 
 int main() {
-    int v[1000] = { 4,8,1,7,3,2,6 }, n = 7, p = 2;
+    int x[1000] = { 2,4,6,5,4,3,6,8 }, n = 8;
     
-    inserare(v, n, p, 45);
-    afisare(v, n);
-   
+    citire(x, n);
+
+    afisare(x, n);
+    secventa(x, n);
+    
 }
 
